@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .slider {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input[type=radio] {
+            display: none;
+        }
+
+        input:checked + .slide {
+            display: block;
+        }
+
+        .slides input:checked ~ .dots .dot {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <div class="slides">
+            <div class="slide">
+                <img src="/image-ip11/ip11prm.webp" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="/image-ip11/ip11pro.webp" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="/image-ip11/ip11thuong.jpg" alt="Image 3">
+            </div>
+        </div>
+        <div class="dots">
+            <label for="slide1" class="dot"></label>
+            <label for="slide2" class="dot"></label>
+            <label for="slide3" class="dot"></label>
+        </div>
+    </div>
+</body>
+</html>

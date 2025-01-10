@@ -1,0 +1,79 @@
+#dungluong1, #dungluong2, #dungluong3  {
+    display: none;
+}
+
+.label-dungluong {
+    padding: 5px 10px 5px 10px;
+    border: solid 1px rgb(178, 165, 165);
+    background: none;
+    color:rgb(178, 165, 165) ;
+    cursor: pointer;
+    text-align: center;
+}
+
+.label-dungluong.selected {
+    border: solid 1px red;
+}
+.mau-dienthoai {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#mau1, #mau2, #mau3, #mau4, #mau5, #mau6 {
+    display: none;
+}
+.tuychon h4 {
+    color: whitesmoke;
+}
+.label-mau {
+    padding: 5px 10px 5px 10px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+    border: solid 1px rgb(178, 165, 165);
+    background: none;
+    color:rgb(178, 165, 165) ;
+    cursor: pointer;
+    text-align: center;
+}
+.label-mau.selected {
+    border: solid 1px red;
+}
+
+.muangay {
+    text-align: center;
+    background-color: red;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tragop {
+    text-align: center;
+    background-color: chocolate;
+    color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 46%;
+    margin-right: 5%;
+    margin-top: 5px;
+}
+.thuculendoi {
+    text-align: center;
+    background-color: rgb(114, 226, 9);
+    color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 46%;
+    margin-top: 5px;
+}
+.thuculendoi a, .tragop a, .muangay a {
+    color: antiquewhite;
+}

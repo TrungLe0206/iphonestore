@@ -1,0 +1,107 @@
+
+.sanpham-con li {
+    width: 250px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.giamgia {
+    background-color: red;
+    font-size: 10px;
+    border: none;
+    padding: 7px;
+    color: white;
+    border-radius: 14px 0px 14px 0px;
+}
+
+.tragop {
+    font-size: 10px;
+    padding: 7px;
+    float: right;
+    border-radius: 0px 0px 0px 14px;
+}
+.sanpham-con li h3 {
+    color: rgb(255, 0, 0);
+    margin:5px 0px 5px 0px;
+}
+.sanpham-con li h4 {
+    margin: 10px 0 0 0;;
+    color:dimgrey;
+}
+.sanpham-con h1 {
+    display: inline-block;
+    margin: 0;
+    transform: rotateZ(-90deg);
+    height: 50px;
+    transform-origin: right bottom;
+    color: whitesmoke;
+}
+.ten-dongiphone {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    transform: rotate(270deg);
+    justify-content: space-evenly;
+}
+.sanpham-con li p {
+    margin: 0;
+}
+
+.ip16{
+    width: 1000px;
+    margin: auto;
+}
+.ip16 ul {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.ip16 ul li {
+    list-style: none;
+    width: 250px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 0px 15px 0px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+    box-shadow: 2px 0px 0px rgba(255, 255, 255, 0.2);
+}
+.ip16 ul li h3 {
+    margin: 5px 0px 5px 5px;
+    color: red;
+}
+
+.ip16 ul li h4 {
+    margin: 10px 0 0 0;;
+    color:dimgrey;
+}
+.ip16 ul li p {
+    padding-left: 20px;
+    margin: 0;
+}
+.ip16 ul li p s {
+    font-size: 13px;
+    color: gray;
+}
+
+.label-sk {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+
+.star {
+    border: none;
+    float: right;
+    margin-right: 5px;
+}
+label.star::before {
+    font-size: 20px;
+    color: #FD4;
+    content: '\f005';
+    font-family: FontAwesome;
+  }

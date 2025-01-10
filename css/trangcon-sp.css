@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../image/background-sp.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    height: auto;
+    background-attachment: fixed;
+}
+
+
+.header {
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header h1 {
+    flex: 1;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background:-webkit-linear-gradient( rgb(229, 107, 127),#f4f4f4) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.search-div {
+    display: flex;
+    flex:2;
+    align-items: center;
+}
+.search-div img {
+    border-radius: 50px;
+}
+.search {
+    width: 400px;
+    height: 25px;
+    border-radius: 25px;
+    border-style: solid;
+    background:rgb(44, 43, 44);
+    border-color: pink;
+    box-shadow: none;
+    margin-left: 10px;
+    color: #f269f2;
+}
+.search::placeholder {
+    padding: 10px;
+    color: #dacbda;
+}
+
+.container {
+    width: 700px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tittle {
+    margin-top: 70px;
+    width: 800px;
+    height: auto;
+}
+.tittle h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+.tuychon {
+    display: inline-block;
+}
+.footer {
+    background:-webkit-linear-gradient( rgb(79, 56, 60),#000000) ;
+    color:darkgray;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,9)  inset;
+    bottom: 0;
+}
+.product-info {
+    color: wheat;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px;
+    padding: 10px;
+}
+.key-features {
+    height: auto;
+    color: rgb(136, 133, 228);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px;
+}

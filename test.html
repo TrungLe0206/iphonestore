@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Click Effect</title>
+    <style>
+        .radio-label {
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .radio-label.selected {
+            border-color: blue; /* Thay đổi viền khi được chọn */
+        }
+        .radio-input {
+            display: none; /* Ẩn radio button thật */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="radio" id="radio1" name="radio-group" class="radio-input" onclick="selectLabel(this)">
+        <label for="radio1" class="radio-label">Option 1</label>
+
+        <input type="radio" id="radio2" name="radio-group" class="radio-input" onclick="selectLabel(this)">
+        <label for="radio2" class="radio-label">Option 2</label>
+
+        <input type="radio" id="radio3" name="radio-group" class="radio-input" onclick="selectLabel(this)">
+        <label for="radio3" class="radio-label">Option 3</label>
+    </form>
+
+    <script>
+        function selectLabel(radio) {
+            // Xóa lớp 'selected' khỏi tất cả các thẻ label
+            var labels = document.querySelectorAll('.radio-label');
+            labels.forEach(function(label) {
+                label.classList.remove('selected');
+            });
+
+            // Thêm lớp 'selected' vào thẻ label được chọn
+            var selectedLabel = document.querySelector('label[for="' + radio.id + '"]');
+            selectedLabel.classList.add('selected');
+        }
+    </script>
+</body>
+</html>
